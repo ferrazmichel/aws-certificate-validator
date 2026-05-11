@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Certificado AWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="validation-card">
+            <div class="aws-logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50" fill="#FF9900"/>
+                    <path d="M 25 50 Q 50 35 75 50" fill="none" stroke="white" stroke-width="3"/>
+                    <path d="M 25 50 Q 50 65 75 50" fill="none" stroke="white" stroke-width="3"/>
+                </svg>
+            </div>
+            
+            <h1>Validar Certificado</h1>
+            <p class="subtitle">AWS Certified Cloud Practitioner</p>
+            
+            <form id="validationForm" onsubmit="handleValidation(event)">
+                <div class="form-group">
+                    <label for="validationNumber">Número de Validação:</label>
+                    <input 
+                        type="text" 
+                        id="validationNumber" 
+                        name="validationNumber"
+                        placeholder="Digite ou cole o número de validação"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+                
+                <button type="submit" class="btn-validate">Validar Certificado</button>
+            </form>
+            
+            <div id="errorMessage" class="error-message"></div>
+            
+            <div class="info-box">
+                <p><strong>Informação:</strong> O número de validação está disponível no certificado AWS na caixa de "VALIDATION NUMBER".</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
