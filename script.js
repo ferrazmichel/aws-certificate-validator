@@ -1,4 +1,5 @@
 // Validation number que será aceito (você pode adicionar múltiplos números válidos aqui)
+// Deployment: 2026-05-11T15:15
 const VALID_VALIDATION_NUMBERS = [
     'XRBKS0BC9MFQQC26',
     'WGJEI5BFFSERQQ34'
