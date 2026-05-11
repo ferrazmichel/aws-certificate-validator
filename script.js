@@ -1,14 +1,19 @@
 // Validation number que será aceito (você pode adicionar múltiplos números válidos aqui)
 const VALID_VALIDATION_NUMBERS = [
-    'XRBKS0BC9MFQQC26'
+    'XRBKS0BC9MFQQC26',
+    'WGJEI5BFFSERQQ34'
 ];
 
-// Objeto para armazenar referências às imagens (serão adicionadas via arquivo de configuração ou embed)
 const certificateData = {
     'XRBKS0BC9MFQQC26': {
         name: 'Michel Ferraz',
-        imagePath: 'certificate.png',  // A imagem será incluída na pasta do Azure
+        imagePath: 'certificate.png',
         title: 'AWS Certified Cloud Practitioner'
+    },
+    'WGJEI5BFFSERQQ34': {
+        name: 'Michel Ferraz',
+        imagePath: 'certificate_aiml.png',
+        title: 'AWS Certified AI & ML Practitioner'
     }
 };
 
